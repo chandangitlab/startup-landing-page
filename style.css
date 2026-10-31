@@ -4,21 +4,21 @@
 
 body {
     margin: 0;
-    padding: 16px 0 35px;
-    background-color: #202020;
+    padding: 0;
+    background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 
 .website {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
     padding: 0 26px 50px;
     background-color: black;
 }
-
 
 .navbar {
     position: sticky;
