@@ -1,4 +1,3 @@
-/* Basic page settings */
 * {
     box-sizing: border-box;
 }
@@ -11,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Main black website area */
+
 .website {
     width: 80%;
     max-width: 1100px;
@@ -20,7 +19,7 @@ body {
     background-color: black;
 }
 
-/* Navigation bar */
+
 .navbar {
     position: sticky;
     top: 0;
@@ -52,7 +51,7 @@ body {
     font-size: 12px;
 }
 
-/* Intro section: text on left and image on right */
+
 .intro {
     display: flex;
     justify-content: space-between;
@@ -106,11 +105,11 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
-    object-position: center 30%;
+    object-fit: contain;
+    object-position: center;
+    background-color: black;
 }
 
-/* Contact form */
 .contact {
     margin-top: 46px;
 }
@@ -141,7 +140,7 @@ body {
     font-size: 11px;
 }
 
-/* Do not show the browser's blue outline when an input is selected */
+
 .contact input:focus {
     outline: none;
     box-shadow: none;
@@ -168,7 +167,7 @@ body {
     min-width: 138px;
 }
 
-/* Startup table */
+
 .table-section {
     margin: 48px 5px 0;
 }
@@ -207,7 +206,7 @@ tfoot {
     color: black;
 }
 
-/* Simple mobile layout */
+
 @media (max-width: 700px) {
     .website {
         width: 94%;
