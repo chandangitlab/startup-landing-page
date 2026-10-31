@@ -1,0 +1,260 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 16px 0 35px;
+    background-color: #202020;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main black website area */
+.website {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 26px 50px;
+    background-color: black;
+}
+
+/* Navigation bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 38px;
+    margin: 0 -26px;
+    padding: 10px 25px;
+    background-color: #ffb900;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Intro section: text on left and image on right */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    padding-top: 34px;
+}
+
+.intro-text {
+    width: 55%;
+}
+
+.intro-text h1 {
+    margin: 0 0 12px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.intro-text p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.32;
+}
+
+.login-button,
+.submit-button {
+    border: none;
+    border-radius: 25px;
+    background-color: #ffb900;
+    color: black;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 136px;
+    padding: 7px 15px;
+    margin-top: 20px;
+}
+
+.intro-image {
+    width: 43%;
+    height: 208px;
+    border: 4px solid #00ad63;
+    overflow: hidden;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+/* Contact form */
+.contact {
+    margin-top: 46px;
+}
+
+.contact h2 {
+    margin: 0 0 25px;
+    color: #ffb900;
+    font-size: 27px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact input {
+    width: 100%;
+    height: 35px;
+    padding: 0 24px;
+    border: 1px solid #ffb900;
+    border-radius: 22px;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+/* Do not show the browser's blue outline when an input is selected */
+.contact input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contact input::placeholder {
+    color: #ffb900;
+    opacity: 1;
+}
+
+.small-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.small-inputs input {
+    width: 47%;
+}
+
+.submit-button {
+    padding: 10px 24px;
+    min-width: 138px;
+}
+
+/* Startup table */
+.table-section {
+    margin: 48px 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffb900;
+    font-size: 11px;
+}
+
+th,
+td {
+    border: 1px solid #ffb900;
+    padding: 12px 18px;
+    text-align: left;
+}
+
+th {
+    font-weight: 500;
+}
+
+th:first-child,
+td:first-child {
+    width: 9%;
+    text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 30%;
+}
+
+tfoot {
+    background-color: #ffb900;
+    color: black;
+}
+
+/* Simple mobile layout */
+@media (max-width: 700px) {
+    .website {
+        width: 94%;
+        padding: 0 15px 35px;
+    }
+
+    .navbar {
+        margin: 0 -15px;
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text,
+    .intro-image {
+        width: 100%;
+    }
+
+    .intro-image {
+        height: 230px;
+    }
+
+    .small-inputs {
+        gap: 12px;
+    }
+
+    .small-inputs input {
+        width: 50%;
+    }
+
+    .table-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 520px;
+    }
+}
